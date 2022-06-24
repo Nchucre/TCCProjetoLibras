@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Ground
+  - Inimigo
+  - ParedePoder
+  - Undefined
+  - Poder
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - Solo
+  - Inimigo
+  - Poder
+  - ParedePoder
+  - Player
+  - Interacao
+  - InimigoSemColider
+  - PoderInimigo
+  - EscudoPlayer
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Background
+    uniqueID: 2575983773
+    locked: 0
+  - name: CenarioCosta
+    uniqueID: 68693791
+    locked: 0
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: CenarioFrente
+    uniqueID: 3191173257
+    locked: 0
+  - name: HUD
+    uniqueID: 3650267983
+    locked: 0

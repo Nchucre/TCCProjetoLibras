@@ -1,0 +1,42 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class WinVento : MonoBehaviour
+{
+    public      GameObject      canvasEnigma;
+    private     CameraFollow    cameraControler;
+    private     Controlador    gameControlador;
+    private     int         pontosMax, pontos;
+    private     Fade        fade;
+    //public      GameObject  letras;
+    // Start is called before the first frame update
+    void Start()
+    {
+        //pontosMax = letras.transform.childCount;
+        pontosMax = 5;
+        cameraControler = FindObjectOfType(typeof(CameraFollow)) as CameraFollow;
+        gameControlador = FindObjectOfType(typeof(Controlador)) as Controlador;
+        fade = FindObjectOfType(typeof(Fade)) as Fade;
+        fade.FadeOut();
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        if(pontos >= pontosMax)
+        {
+            canvasEnigma.SetActive(false);//desativa o enigma
+            cameraControler.cameraPlayer = true;
+            gameControlador.poderes[1] = true;
+            gameControlador.quantPoderes = 2;
+            gameControlador.MudarMaquinaEstado(MaquinaEstado.JOGANDO);
+            Destroy(this.gameObject);
+        }
+    }
+
+   public void AddPontosVento()
+    {
+        pontos++;
+    }
+}
